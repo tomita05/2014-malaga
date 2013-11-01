@@ -1,0 +1,552 @@
+@charset "utf-8";
+/* =========================================================
+スタイルシート
+
+ 更新日：20121205
+
+ file name  : style.css
+ 
+============================================================ */
+
+/* 基本設定
+/*-----------------------------------------------------*/
+
+
+body {
+	font-size:16px;
+	background: #ffffff url(img/bg-content.gif);
+}
+
+h2 {
+  color: red;
+}
+
+
+*{
+	margin:0px;
+	padding:0px;
+}
+img{
+	border:0px #FFFFFF solid;
+	vertical-align: top;
+}
+
+.waku{
+	border:1px #ddd solid;
+}
+
+
+a.no-link:link { color: #999999; }
+a.no-link:visited { color: #999999; }
+a.no-link:hover { color: #999999; }
+a.no-link:active { color: #999999; }
+
+.clears{
+	clear:both;
+	visibility: hidden;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 余白調整用　（途中）
+/*-----------------------------------------------------*/
+
+.margin_top_10px{
+	margin-top:10px;
+}
+.margin_top_30px{
+	margin-top:30px;
+}
+.margin_top_15px{
+	margin-top:15px;
+}
+.margin_left_15px{
+	margin-left:15px;
+}
+
+
+.margin_bottom_10px{
+	margin-bottom:10px;
+}
+
+
+.margin_center_0px{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/* フォント装飾　（途中）
+/*-----------------------------------------------------*/
+
+.red{
+	color:red;
+	font-weight:bold;
+}
+.font_size_90{
+	font-size:90%;
+}
+.font_size_80{
+	font-size:80%;
+}
+
+.font14px {
+  font-weight: bold;
+}
+
+
+
+/* コンテンツ部分
+/*-----------------------------------------------------*/
+#content{
+	width:950px;
+	margin:0 auto 0 auto;
+  text-align: center;
+}
+
+
+/* ヘッダー部分（NUEVO）
+/*-----------------------------------------------------*/
+#content #cet_head{
+	width:950px;
+	height:120px;
+	text-align: center;
+}
+
+#content #pankuzu{
+	width:920px;
+	height:25px;
+	margin:3px auto;
+  font-size: 100%;
+  color: #fff;
+	text-align: left;
+}
+
+
+#content #pankuzu a:link { color: #fff; }
+#content #pankuzu a:visited { color: #fff; }
+#content #pankuzu a:hover { color: #FF8C00; }
+#content #pankuzu a:active { color: red; }
+
+#content #header {
+	background: #ffffff url(img/head.jpg);
+	width:920px;
+	height:138px;
+	margin:3px auto;
+	position:relative;
+	text-align:left;
+}
+
+#content #header .head_texto {
+	position:absolute;
+	top:6px;
+	right:40px;
+  font-size:90%;
+  color:#666;
+}
+
+
+/* メイン部分（背景色入れています）
+/*-----------------------------------------------------*/
+
+#main_area{
+	width:920px;
+	margin:0px auto;
+  font-size: 90%;
+  background-color: #bdb76b;
+	text-align: left;
+}
+
+#main_area a:link { color: #0033cc; }
+#main_area a:visited { color: #0033cc; }
+#main_area a:hover { color: #1111cc; }
+#main_area a:active { color: red; }
+
+
+#main_area p.norma{
+  padding: 5px 0 0 10px;
+  text-align:right;
+}
+
+#main_area #owari{
+	width:900px;
+	height:70px;
+  margin:15px auto 0 auto;
+  background-color: #fff;
+	text-align: left;
+}
+
+
+#main_area #owari .owari{
+  font-size: 16px;
+  font-weight:bold;
+	color:#666;
+  padding: 10px 0 0 15px;
+}
+
+#main_area #midashi{
+	width:900px;
+	height:40px;
+  margin:15px auto 0 auto;
+  background-color: #0a0a28;
+	text-align: left;
+}
+
+#main_area #midashi h1{
+  font-size: 18px;
+  font-weight:bold;
+  color:#fff;
+  padding: 10px 0 0 15px;
+}
+
+#main_area #midashi h2{
+  font-size: 18px;
+  font-weight:bold;
+  color:#fff;
+  padding: 10px 0 0 15px;
+}
+
+
+/* サマリー
+/*-----------------------------------------------------*/
+
+#main_area #summary{
+		width:920px;
+    padding-top: 10px;
+		margin:10px auto 20px auto;
+	}
+
+#main_area #summary .sum {
+    font-size:100%;
+    font-weight: bold;
+    color: #fff;
+    line-height: 18px;
+    padding-left:10px;
+	}
+
+#main_area #summary .img_right {
+	float:right;
+	margin: 5px 15px;
+  text-align: center;
+  font-size: 75%;
+}
+
+#main_area #summary .social {
+	float: right;
+  border:0px solid #ddd;
+  vertical-align: middle;
+}
+
+
+/* ソーシャルボタン
+/*-----------------------------------------------------*/
+
+
+
+
+/* 概要テーブル
+/*-----------------------------------------------------*/
+
+#main_area #gaiyou_table{
+		border-collapse:collapse;
+		width:900px;
+		margin:20px auto 25px auto;
+	}
+
+#main_area #gaiyou_table tr{
+		border-collapse:collapse;
+  font-size: 110%;
+	}
+
+#main_area #gaiyou_table th{
+		width:250px;
+		border:1px solid #666;
+  font-weight:normal;
+	text-align: center;
+		background: #ffffe0;
+		color: #666;
+		padding:12px 0px;
+	}
+
+#main_area #gaiyou_table td{
+		width:650px;
+		border:1px solid #666;
+		background: #fff;
+		padding:10px 0px;
+	}
+
+#main_area #gaiyou_table .discription {
+	width:630px;
+	padding:4px 0 4px 15px;
+	border:0px dotted #ddd;
+}
+
+#main_area #gaiyou_table .discription2 {
+	width:600px;
+	padding:0px 0 10px 15px;
+	border:0px dotted #ddd;
+  font-size: 90%;
+}
+
+
+/* 旅の目玉テーブル
+/*-----------------------------------------------------*/
+
+#main_area #point_table{
+		border-collapse:collapse;
+		width:900px;
+		margin:20px auto 1px auto;
+	}
+
+#main_area #point_table tr{
+		border-collapse:collapse;
+	}
+
+#main_area #point_table th{
+		border:1px solid #666;
+	text-align: center;
+  font-size: 110%;
+		background: #ffffe0;
+		color: #666;
+		padding:12px 0px;
+	}
+
+#main_area #point_table td.point{
+		border:1px solid #666;
+		background: #fff;
+    width: 900px;
+		padding:10px 0px;
+  font-size: 100%;
+  vertical-align: top;
+	}
+
+
+#main_area #point_table td.igual{
+		border:1px solid #666;
+		background: #fff;
+    width: 450px;
+		padding:10px 0px;
+  font-size: 100%;
+  vertical-align: top;
+	}
+
+
+#main_area #point_table .discription {
+	padding:4px 10px;
+	border:0px dotted #333;
+  line-height: 18px;
+}
+
+#main_area #point_table .img_left {
+	float:left;
+	margin: 0px 10px 5px 5px;
+  text-align: center;
+	border:0px dotted red;
+  font-size: 75%;
+}
+
+#main_area #point_table .img_left img{
+	margin-bottom: 3px;
+}
+
+
+
+
+#main_area #point_table .discription2 {
+	padding:0px 0 10px 15px;
+	border:0px dotted #ddd;
+  line-height: 30px;
+  color: #006699;
+  font-weight: bold;
+}
+
+#main_area #point_table .discription3 {
+	padding:0px 0 10px 15px;
+	border:0px dotted #ddd;
+  line-height: 30px;
+  color: #009933;
+  font-weight: bold;
+}
+
+/* 日程テーブル
+/*-----------------------------------------------------*/
+
+#main_area #plan_table{
+		border-collapse:collapse;
+		width:900px;
+		margin:20px auto 1px auto;
+	}
+
+#main_area #plan_table tr{
+		border-collapse:collapse;
+  font-size: 110%;
+	}
+
+#main_area #plan_table th{
+		border:1px solid #666;
+	text-align: center;
+		background: #ffffe0;
+		color: #666;
+		padding:12px 0px;
+	}
+
+#main_area #plan_table td{
+		border:1px solid #666;
+		background: #fff;
+		padding:10px 0px;
+	}
+
+#main_area #plan_table .data{
+	text-align: center;
+  width: 90px;
+	}
+
+#main_area #plan_table .comida{
+	text-align: center;
+  line-height: 20px;
+  width: 70px;
+	}
+
+#main_area #plan_table .hotel{
+	text-align: center;
+  width: 100px;
+	}
+
+#main_area #plan_table .discription {
+	padding:4px 0 4px 15px;
+	border:0px dotted #ddd;
+  line-height: 30px;
+}
+
+#main_area #plan_table .discription2 {
+	padding:0px 0 10px 15px;
+	border:0px dotted #ddd;
+  line-height: 30px;
+  color: #006699;
+  font-weight: bold;
+}
+
+#main_area #plan_table .discription3 {
+	padding:0px 0 10px 15px;
+	border:0px dotted #ddd;
+  line-height: 30px;
+  color: #009933;
+  font-weight: bold;
+}
+
+
+/* 条件テーブル
+/*-----------------------------------------------------*/
+
+#main_area #con_table{
+		border-collapse:collapse;
+		width:900px;
+		margin:20px auto 25px auto;
+	}
+
+#main_area #con_table tr{
+		border-collapse:collapse;
+  font-size: 110%;
+	}
+
+#main_area #con_table th{
+		width:250px;
+		border:1px solid #666;
+  font-weight:normal;
+	text-align: center;
+		background: #ffffe0;
+		color: #666;
+		padding:12px 0px;
+	}
+
+#main_area #con_table td{
+		width:650px;
+		border:1px solid #666;
+		background: #fff;
+		padding:10px 0px;
+	}
+
+#main_area #con_table .discription {
+	width:620px;
+	padding:4px 0 4px 15px;
+	border:0px dotted #ddd;
+}
+
+#main_area #con_table .discription2 {
+	width:620px;
+	padding:0px 0 10px 15px;
+  font-size: 90%;
+	border:0px dotted #ddd;
+}
+
+
+
+
+#main_area p.table_ex{
+  padding: 5px 0 0 15px;
+}
+
+
+/* HISの表記
+/*-----------------------------------------------------*/
+
+#main_area #his_area{
+	width:690px;
+  margin:10px auto 20px auto;
+  font-size:100%;
+  text-align: left;
+}
+
+#main_area #his_area h3{
+  font-size:130%;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+
+/* 問い合わせ電話番号
+/*-----------------------------------------------------*/
+
+#main_area #tel_area{
+	width:690px;
+	height:180px;
+  margin:50px auto 20px auto;
+  font-size:120%;
+}
+
+/*///////////////////////////////////////////////
+
+フォームとフッターの間 
+
+///////////////////////////////////////////////*/
+
+
+
+#main_area #foot_tel{
+		width:900px;
+		margin:3px 10px 15px 0;
+		text-align: right;
+		font-size: 110%;
+	}
+
+
+
+
+/* フッター
+/*-----------------------------------------------------*/
+
+#footer{
+	background-color:#E6E6E6;
+	height:100px;
+	font-size:100%;
+	padding:20px 0 20px 0;
+	text-align:center;
+}
+
+
+
+#footer p{
+	margin-top:20px;
+}
